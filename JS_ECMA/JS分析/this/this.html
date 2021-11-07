@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<style>
+    *{
+        margin:0;padding: 0;
+    }
+    #enterInfo{
+        width: 1600px;
+        height: 500px;
+        margin: 100px 100px;
+        display: flex;
+        background-color: pink;
+    }
+    #enterInfo #left{
+        background-color: aqua;
+        /* width: 50%; */
+    }
+    #enterInfo .writeInfoSpan{
+        display: inline-block;
+        width: 170px;
+        height: 80px;
+        font-size: 28px;
+        line-height: 80px;
+        text-align: right;
+        margin-right:30px;
+    }
+    #enterInfo .writeInfoSpanLeft{
+        margin-left:155px;
+    }
+    #enterInfo .writeInfoSpanRight{
+        margin-left:5px;
+    }
+    #enterInfo .writeInfoInput{
+        width: 445px;
+        height: 80px;
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 10px;
+        padding:26px 20px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        font-family: SourceHanSans-Regular;
+        font-size: 28px;
+        color: #272727;
+        line-height: 42px;
+    }
+</style>
+<body>
+    <div id="enterInfo">
+        <div id="left">
+            <span id="writeInfoSpan1" class="writeInfoSpan writeInfoSpanLeft">姓名（中文）</span><input type="text" id="writeInfoInput1" class="writeInfoInput"></br>
+            <span id="writeInfoSpan2" class="writeInfoSpan writeInfoSpanLeft">姓名（英文）</span><input type="text" id="writeInfoInput2"  class="writeInfoInput"></br>
+            <span id="writeInfoSpan3" class="writeInfoSpan writeInfoSpanLeft">性别</span><input type="text" id="writeInfoInput3" class="writeInfoInput "></br>
+        </div>
+        <div id="right">
+            <span id="writeInfoSpan4" class="writeInfoSpan writeInfoSpanRight">姓名（中文）</span><input type="text" id="writeInfoInput4" class="writeInfoInput"></br>
+            <span  id="writeInfoSpan5" class="writeInfoSpan writeInfoSpanRight">姓名（英文）</span><input type="text" id="writeInfoInput5" class="writeInfoInput"></br>
+            <span id="writeInfoSpan6" class="writeInfoSpan writeInfoSpanRight">签发日期</span><input type="text" id="writeInfoInput6" class="writeInfoInput"></br>
+        </div>
+    </div>
+    <script>
+        var name = "The Window";
+        var object = {
+            name : "My Object",
+            getNameFunc : function(){
+                return function(){
+                    return this.name;
+                };
+            }
+        };
+        console.log(object.getNameFunc()()); //"The Window"（在非严格模式下）
+    </script>
+</body>
+</html>

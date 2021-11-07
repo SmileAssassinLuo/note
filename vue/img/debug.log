@@ -1,0 +1,190 @@
+[1022/152028.385:INFO:crash_reporting.cc(219)] Crash reporting enabled for process: browser
+[1022/152028.535:INFO:gpu_process_host.cc(941)] [XWEB_LOG_GPU]  GPU process laucnched multi-process mode SUCCESS!!! gpu-process-pid:616 gpu-process-sandbox:1
+[1022/152028.571:INFO:crash_reporting.cc(219)] Crash reporting enabled for process: gpu-process
+[1022/152028.824:INFO:crash_reporting.cc(219)] Crash reporting enabled for process: utility
+[1022/152228.585:INFO:crash_reporting.cc(219)] Crash reporting enabled for process: gpu-process
+[1022/181820.858:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181825.889:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181830.916:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181835.951:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181840.977:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181846.017:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181851.053:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181856.086:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181901.113:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181906.133:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181911.167:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181916.207:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181921.246:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181926.277:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181931.306:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181936.337:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181941.362:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181945.554:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181946.384:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181950.583:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181951.422:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181955.617:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/181956.450:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182000.650:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182001.482:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182005.676:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182006.492:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182010.707:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182011.517:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182015.749:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182016.534:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182020.785:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182021.565:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182025.825:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182026.588:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182030.867:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182031.622:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182035.901:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182036.653:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182040.935:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182041.688:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182045.971:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182046.715:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182050.994:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182051.746:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182056.017:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182056.775:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182101.048:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182101.803:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182106.071:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182106.837:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182111.103:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182111.861:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182116.137:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182116.876:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182121.163:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182121.902:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182126.186:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182126.932:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182131.216:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182131.964:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182136.244:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182136.989:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182141.260:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182142.014:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182146.283:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182147.033:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182151.312:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182152.055:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182156.350:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182157.073:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182201.390:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182202.098:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182206.433:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182207.114:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182211.454:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182212.146:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182216.484:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182217.175:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182221.516:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182222.196:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182226.547:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182227.219:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182231.576:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182232.231:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182236.607:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182237.258:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182241.625:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182242.291:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182246.650:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182247.317:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182251.676:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182252.342:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182256.706:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182257.370:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182301.732:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182302.394:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182306.764:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182307.416:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182311.800:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182312.446:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182316.831:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182317.477:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182321.866:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182322.505:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182326.892:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182327.529:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182331.927:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182332.564:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182336.962:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182337.591:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182341.978:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182342.618:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182346.995:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182347.641:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182352.017:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182352.658:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182357.052:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182357.677:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182402.086:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182402.701:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182407.113:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182407.724:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182412.143:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182412.748:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182417.178:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182417.769:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182422.211:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182422.801:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182427.241:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182427.827:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182432.264:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182432.863:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182437.285:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182437.888:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182442.298:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/182442.922:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1022/231236.023:WARNING:angle_platform_impl.cc(45)] compileToBinary(256): 
+C:\fakepath(73,23-41): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[1022/231237.066:INFO:crash_reporting.cc(219)] Crash reporting enabled for process: utility
+[1022/231242.983:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 15
+[1022/231242.983:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 17
+[1022/231259.617:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 47
+[1022/231302.163:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 49
+[1022/231302.164:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 51
+[1022/231309.557:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 57
+[1022/231514.123:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 55
+[1022/231516.276:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 131
+[1022/231517.738:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 133
+[1022/231519.193:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 135
+[1022/231535.037:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 145
+[1022/231539.294:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 149
+[1022/231547.975:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 85
+[1022/231550.324:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 87
+[1022/231559.827:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 161
+[1022/231606.189:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 167
+[1022/231608.623:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 93
+[1022/231611.931:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 173
+[1022/231613.925:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 175
+[1022/231621.503:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 181
+[1022/231623.488:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 185
+[1022/231626.080:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 187
+[1022/231630.944:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 197
+[1022/231635.979:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 199
+[1022/231635.980:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 201
+[1022/231638.059:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 203
+[1022/231639.600:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 101
+[1022/231645.353:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 209
+[1022/231647.330:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 211
+[1022/231649.782:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 213
+[1022/231652.358:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 215
+[1022/231657.201:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 219
+[1022/231707.654:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 233
+[1022/231710.408:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 237
+[1022/231716.708:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 247
+[1022/231740.555:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 123
+[1022/231742.085:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 267
+[1022/231744.803:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 269
+[1022/231745.769:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 271
+[1022/231753.939:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 277
+[1022/231759.613:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 283
+[1022/231804.057:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 133
+[1022/231817.674:WARNING:spdy_session.cc(3249)] Received WINDOW_UPDATE for invalid stream 105
+[1022/231818.041:WARNING:spdy_session.cc(3306)] Received HEADERS for invalid stream 105
