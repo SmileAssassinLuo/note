@@ -11,6 +11,10 @@
 
 nodejs的包管理工具
 
+* 在安装一个 package，生产环境  `npm install --save`。
+
+* 开发环境（例如，linter, 测试库等）， `npm install --save-dev`
+
 `npm config get prefix`   查看**npm**全局安装的文件目录；
 
 #### yarn 

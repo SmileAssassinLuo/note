@@ -47,15 +47,15 @@ yarn global upgrade --latest @vue/cli
 
 使用 **git bash** 通过命令`vue create project-name` 新建项目;
 
-![](D:\work\note\vue\img\vue-cli-new-project.png)
+![](D:\work\gitRespository\note\vue\img\vue-cli-new-project.png)
 
 弹出如下交互，使用键盘箭头键选择一个预设,比如选择手动配置选择功能，再按下 **Enter**键；
 
-![](D:\work\note\vue\img\vue-cli-pick-preset.png)
+![](D:\work\gitRespository\note\vue\img\vue-cli-pick-preset.png)
 
 ***箭头键无效，则需要如下处理：***在git安装目录找到 `bash.bashrc`文件，文件末尾添加 `alias vue='winpty vue.cmd'`;重启`git bash`;
 
-<img src="D:\work\note\vue\img\vue-cli箭头问题.png" style="zoom:67%;" />
+<img src="D:\work\gitRespository\note\vue\img\vue-cli箭头问题.png" style="zoom:67%;" />
 
 
 
@@ -63,7 +63,7 @@ yarn global upgrade --latest @vue/cli
 
 `Manually select features`：提供可选的配置：
 
-![](D:\work\note\vue\img\vue-cli-manully-select-features.png)
+![](D:\work\gitRespository\note\vue\img\vue-cli-manully-select-features.png)
 
 按照提示即可选择所需配置；
 

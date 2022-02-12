@@ -85,7 +85,7 @@
 
 * Webpack的打包过程
 
-  ![](D:\work\note\WebPack\img\webpack构建流程.png)
+  ![](D:\work\gitRespository\note\WebPack\img\webpack构建流程.png)
 
   
 
