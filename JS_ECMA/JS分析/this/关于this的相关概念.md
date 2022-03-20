@@ -57,7 +57,7 @@ o.showThis(); //c
 
 在js标准中，为函数规定了保存定义时上下文的私有属性[[Environment]];
 
-函数执行时，会创建一条次那个人执行环境记录，记录的外层词法环境（outer lexical environment）会被设置成函数的[[Environment]];
+函数执行时，会创建一条当前上下文执行环境记录，记录的外层词法环境（`outer lexical environment`）会被设置成函数的`[[Environment]]`;
 
 此动作即为切换上下文；如下代码
 

@@ -22,7 +22,17 @@
 
 ##### 二，为什么要用VNode？
 
-操作`DOM`对性能损耗极大，通过**VNode**尽可能减少`DOM`操作，用`JS`的计算性能来换取操作`DOM`所消耗的性能。
+提升代码抽象能力、避免人为的 DOM 操作、降低代码整体风险等因素，所以引入了虚拟 DOM。
+
+虚拟 DOM 的优点主要有三点：**改善大规模 DOM 操作的性能、规避 XSS 风险、能以较低的成本实现跨平台开发**。
+
+虚拟 DOM 的缺点在社区中主要有两点。
+
+**内存占用较高，因为需要模拟整个网页的真实 DOM**。
+
+**高性能应用场景存在难以优化的情况，类似像 Google Earth 一类的高性能前端应用在技术选型上往往不会选择 React,vue**
+
+
 
 ##### 三，VNode的类型
 
@@ -177,7 +187,7 @@ function patchVnode (oldVnode, vnode, insertedVnodeQueue, removeOnly) {
 
 流程图：
 
-<img src="D:\work\gitRespository\note\vue\img\vnode更新节点.png" style="zoom:75%;" />
+<img src="D:\work\gitRespository\note\vue\img\vnode更新节点.png" style="zoom: 150%;" />
 
 
 

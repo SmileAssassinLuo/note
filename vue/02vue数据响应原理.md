@@ -2,6 +2,10 @@
 
 ##### 一，vue@2.x 
 
+**简单来说就是使用`Object.defineProperty`这个`API`为数据设置`get`和`set`。当读取到某个属性时，触发`get`将读取它的组件对应的`render watcher`收集起来；当重置赋值时，触发`set`通知组件重新渲染页面。如果数据的类型是数组的话，还做了单独的处理，对可以改变数组自身的方法进行重写，因为这些方法不是通过重新赋值改变的数组，不会触发`set`，所以要单独处理。响应系统也有自身的不足，所以官方给出了`$set`和`$delete`来弥补。**
+
+
+
 在 vue @2.x的版本中，通过 `Object.defineProperty()`对数据进行劫持，实现对数据源的监控。
 
 从配置项 options 中取得 data 后，给实例对象添加`_data`属性，并简化访问data的方式。
@@ -223,6 +227,18 @@ class Watch{
 }
 export default Watch
 ```
+
+
+
+
+
+##### 二，vue@3.x
+
+###### 1,proxy 和 reflection
+
+###### 2,vue 数据绑定原理
+
+ 
 
 
 
