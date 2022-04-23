@@ -255,6 +255,12 @@ module.exports = {
 
 ##### loader
 
+自定义loader的原则，
+
+- 单一原则: 每个 `Loader` 只做一件事；
+- 链式调用: `Webpack` 会按顺序链式调用每个 `Loader`；
+- 统一原则: 遵循 `Webpack` 制定的设计规则和结构，输入与输出均为字符串，各个 `Loader` 完全独立，即插即用；
+
 ###### (1)loader的执行顺序,自定义loader
 
  	新建loader目录，并新建3个loader文件，命名`loader1`，`loader2`, `loader3`;

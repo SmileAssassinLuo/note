@@ -292,6 +292,9 @@ this.$emit('select')
     知道这个原理特性后，我们可以做一些更`cool`的事情，例如：
 
     ```vue
+    
+    ```
+```vue
 <div>
       <parent-component>  // $on添加事件
         <child-component-1>
@@ -301,152 +304,152 @@ this.$emit('select')
         </child-components-1>
       </parent-component>
     </div>
-    ```
-    
-    我们可不可以在`parent-component`内使用`$on`添加事件到当前实例的事件中心，而在`child-components-3`内找到`parent-component`的组件实例并在它的事件中心触发对应的事件实现跨组件通信了，答案是可以了！这一原理发现再开发组件库时会有一定帮助。
+```
 
-    **事件相关的处理方法**：
+//我们可不可以在`parent-component`内使用`$on`添加事件到当前实例的事件中心，而在`child-components-3`内找到`parent-component`的组件实例并在它的事件中心触发对应的事件实现跨组件通信了，答案是可以了！这一原理发现再开发组件库时会有一定帮助。
 
-    ```js
-/* @flow */
-    
-    import {
-      tip,
-      toArray,
-      hyphenate,
-      formatComponentName,
-      invokeWithErrorHandling
-    } from '../util/index'
-    import { updateListeners } from '../vdom/helpers/index'
-    
-    export function initEvents (vm: Component) {
-      //事件中心
+
+
+*  initEvents
+
+```js
+import {
+  tip,
+  toArray,
+  hyphenate,
+  formatComponentName,
+  invokeWithErrorHandling
+} from '../util/index'
+import { updateListeners } from '../vdom/helpers/index'
+
+export function initEvents (vm: Component) {
+  //事件中心
+  vm._events = Object.create(null)
+  vm._hasHookEvent = false
+  // init parent attached events 
+  // 经过合并options得到的
+  const listeners = vm.$options._parentListeners
+  if (listeners) {
+    updateComponentListeners(vm, listeners)
+  }
+}
+
+let target: any
+
+function add (event, fn) {
+  target.$on(event, fn)
+}
+
+function remove (event, fn) {
+  target.$off(event, fn)
+}
+
+function createOnceHandler (event, fn) {
+  const _target = target
+  return function onceHandler () {
+    const res = fn.apply(null, arguments)
+    if (res !== null) {
+      _target.$off(event, onceHandler)
+    }
+  }
+}
+
+export function updateComponentListeners (
+  vm: Component,
+  listeners: Object,
+  oldListeners: ?Object
+) {
+  target = vm
+  updateListeners(listeners, oldListeners || {}, add, remove, createOnceHandler, vm)
+  target = undefined
+}
+
+export function eventsMixin (Vue: Class<Component>) {
+  const hookRE = /^hook:/    //检测自定义事件名是否是hook:开头
+  Vue.prototype.$on = function (event: string | Array<string>, fn: Function): Component {
+    const vm: Component = this
+    if (Array.isArray(event)) {
+      for (let i = 0, l = event.length; i < l; i++) {
+        vm.$on(event[i], fn)
+      }
+    } else {
+      //如果有对应事件名就push，没有创建为空数组然后push
+      (vm._events[event] || (vm._events[event] = [])).push(fn)
+      if (hookRE.test(event)) {
+        //如果是hook:开头
+      vm._hasHookEvent = true  // 标志位为true
+      }
+    }
+    return vm
+  }
+
+  Vue.prototype.$once = function (event: string, fn: Function): Component {
+    const vm: Component = this
+    // this.$emit 执行的时候，会先从事件中心移除，然后利用 apply 绑定 this 到 vm 实例执行
+    function on () {
+      vm.$off(event, on)
+      fn.apply(vm, arguments)
+    }
+    on.fn = fn
+    vm.$on(event, on)
+    return vm
+  }
+
+  Vue.prototype.$off = function (event?: string | Array<string>, fn?: Function): Component {
+    const vm: Component = this
+    // all 没有参数，清除事件中心所有事件
+    if (!arguments.length) {
       vm._events = Object.create(null)
-      vm._hasHookEvent = false
-      // init parent attached events 
-      // 经过合并options得到的
-      const listeners = vm.$options._parentListeners
-      if (listeners) {
-        updateComponentListeners(vm, listeners)
+      return vm
+    }
+    // array of events 参数是数组，遍历执行回调，进行事件清除。
+    if (Array.isArray(event)) {
+      for (let i = 0, l = event.length; i < l; i++) {
+        vm.$off(event[i], fn)
+      }
+      return vm
+    }
+    // specific event  找到指定的事件集合
+    const cbs = vm._events[event]
+    if (!cbs) {
+      return vm
+    }
+    //回调函数不存在，直接将指定事件集合置为null
+    if (!fn) {
+      vm._events[event] = null
+      return vm
+    }
+    // specific handler
+    let cb
+    let i = cbs.length
+    while (i--) {
+      cb = cbs[i]
+      //从事件中心移除
+      if (cb === fn || cb.fn === fn) {
+        cbs.splice(i, 1)
+        break
       }
     }
-    
-    let target: any
-    
-    function add (event, fn) {
-      target.$on(event, fn)
-    }
-    
-    function remove (event, fn) {
-      target.$off(event, fn)
-    }
-    
-    function createOnceHandler (event, fn) {
-      const _target = target
-      return function onceHandler () {
-        const res = fn.apply(null, arguments)
-        if (res !== null) {
-          _target.$off(event, onceHandler)
-        }
+    return vm
+  }
+
+  Vue.prototype.$emit = function (event: string): Component {
+    const vm: Component = this
+	...
+    let cbs = vm._events[event]
+    if (cbs) {
+      cbs = cbs.length > 1 ? toArray(cbs) : cbs
+      const args = toArray(arguments, 1)
+      const info = `event handler for "${event}"`
+      for (let i = 0, l = cbs.length; i < l; i++) {
+        invokeWithErrorHandling(cbs[i], vm, args, vm, info)
       }
     }
-    
-    export function updateComponentListeners (
-      vm: Component,
-      listeners: Object,
-      oldListeners: ?Object
-    ) {
-      target = vm
-      updateListeners(listeners, oldListeners || {}, add, remove, createOnceHandler, vm)
-      target = undefined
-    }
-    
-    export function eventsMixin (Vue: Class<Component>) {
-      const hookRE = /^hook:/    //检测自定义事件名是否是hook:开头
-      Vue.prototype.$on = function (event: string | Array<string>, fn: Function): Component {
-        const vm: Component = this
-        if (Array.isArray(event)) {
-          for (let i = 0, l = event.length; i < l; i++) {
-            vm.$on(event[i], fn)
-          }
-        } else {
-          //如果有对应事件名就push，没有创建为空数组然后push
-          (vm._events[event] || (vm._events[event] = [])).push(fn)
-          if (hookRE.test(event)) {
-            //如果是hook:开头
-          vm._hasHookEvent = true  // 标志位为true
-          }
-        }
-        return vm
-      }
-    
-      Vue.prototype.$once = function (event: string, fn: Function): Component {
-        const vm: Component = this
-        // this.$emit 执行的时候，会先从事件中心移除，然后利用 apply 绑定 this 到 vm 实例执行
-        function on () {
-          vm.$off(event, on)
-          fn.apply(vm, arguments)
-        }
-        on.fn = fn
-        vm.$on(event, on)
-        return vm
-      }
-    
-      Vue.prototype.$off = function (event?: string | Array<string>, fn?: Function): Component {
-        const vm: Component = this
-        // all 没有参数，清除事件中心所有事件
-        if (!arguments.length) {
-          vm._events = Object.create(null)
-          return vm
-        }
-        // array of events 参数是数组，遍历执行回调，进行事件清除。
-        if (Array.isArray(event)) {
-          for (let i = 0, l = event.length; i < l; i++) {
-            vm.$off(event[i], fn)
-          }
-          return vm
-        }
-        // specific event  找到指定的事件集合
-        const cbs = vm._events[event]
-        if (!cbs) {
-          return vm
-        }
-        //回调函数不存在，直接将指定事件集合置为null
-        if (!fn) {
-          vm._events[event] = null
-          return vm
-        }
-        // specific handler
-        let cb
-        let i = cbs.length
-        while (i--) {
-          cb = cbs[i]
-          //从事件中心移除
-          if (cb === fn || cb.fn === fn) {
-            cbs.splice(i, 1)
-            break
-          }
-        }
-        return vm
-      }
-    
-      Vue.prototype.$emit = function (event: string): Component {
-        const vm: Component = this
-    	...
-        let cbs = vm._events[event]
-        if (cbs) {
-          cbs = cbs.length > 1 ? toArray(cbs) : cbs
-          const args = toArray(arguments, 1)
-          const info = `event handler for "${event}"`
-          for (let i = 0, l = cbs.length; i < l; i++) {
-            invokeWithErrorHandling(cbs[i], vm, args, vm, info)
-          }
-        }
-        return vm
-      }
-    }
-    ```
-  
+    return vm
+  }
+}
+```
+
 * `initRender`:挂载可以将`render`函数转为`vnode`的方法
 
   ```js
