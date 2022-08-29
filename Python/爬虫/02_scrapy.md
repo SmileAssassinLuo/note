@@ -24,17 +24,17 @@ cmd 命令行 `pip install scrapy -i https://pypi.douban.com/simple`
 
 ```python
 “
-scrapy.cfg ：项目的配置文件
+scrapy.cfg ：项目的部署配置文件
 
 mySpider/ ：项目的Python模块，将会从这里引用代码
 
-mySpider/items.py ：项目的目标文件
+mySpider/items.py ：数据模型文件，比如需要解析为哪些结构
 
-mySpider/pipelines.py ：项目的管道文件
+mySpider/pipelines.py ：pipeline 文件，用于存放自定义pipeline的处理逻辑，比如配置保存数据库的逻辑
 
-mySpider/settings.py ：项目的设置文件
+mySpider/settings.py ：项目的配置文件，自定义的外部配置都可以放在这里
 
-mySpider/spiders/ ：存储爬虫代码目录
+mySpider/spiders/ ： Spider类文件夹，我们编写的解析代码均存放在这里
 mySpider/spiders/ init.py 爬虫的核心文件
 ”
 ```
@@ -52,7 +52,11 @@ response.extract_first()  提取selector列表的第一个数据
 
 ##### 四，scrapy架构组成,原理
 
-![](D:\work\gitRespository\note\Python\img\scrapy原理.png)
+<img src="D:\work\gitRespository\note\Python\img\scrapy原理.png" style="zoom: 80%;" />
+
+
+
+##### 五，DEMO 实例
 
 
 
