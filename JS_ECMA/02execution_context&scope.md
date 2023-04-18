@@ -566,12 +566,8 @@ MDN 对闭包的定义为：
         }
         data[0]Context 的 AO 并没有 i 值，所以会沿着作用域链从匿名函数 Context.AO 中查找，这时候就会找 i 为 0，找到了就不会往 globalContext.VO 中查找了，即使 globalContext.VO 也有 i 的值(值为3)，所以打印的结果就是0。
         
-
-
-
-
-
-         /
+使用场景：        
+闭包允许函数“记住”它们创建时的词法环境（lexical environment），即函数的外部变量。这在 JS 函数式编程中实现高阶函数、柯里化、偏函数等技术的基本前提。
 
             
 
